@@ -97,6 +97,7 @@ def change_soc_rules(request):
 
     return redirect(society_rules_page)   
 
+
 def load_event(request):
     master = Master.objects.get(Email = request.session['email'])
     
