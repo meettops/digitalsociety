@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="" class="h-100">
+
+<!-- Mirrored from htmlstream.com/preview/front-v4.2/html/page-signup.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Apr 2022 13:32:09 GMT -->
+<head>
+
+  {% load static %}
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Digital Societ  </title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{% static 'assets/svg/logos/logo-short.svg' %}">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="{%  static 'assets/css/vendor.min.css'  %}">
+  <link rel="stylesheet" href="{%  static 'assets/vendor/bootstrap-icons/font/bootstrap-icons.css'  %}">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="{%  static 'assets/css/theme.minc619.css'  %}?v=1.0">
+
+  {% block css %}
+  {% endblock %}
+</head>
+
+<body class="d-flex align-items-center min-h-100">
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="navbar navbar-expand navbar-light navbar-absolute-top">
+      <div class="container-fluid">
+        <nav class="navbar-nav-wrap">
+          <!-- White Logo -->
+          <a class="navbar-brand d-none d-lg-flex" href="index-2.html" aria-label="Front">
+            <img class="navbar-brand-logo" src="{% static 'assets/svg/logos/logo.svg' %}" alt="Logo">
+          </a>
+          <!-- End White Logo -->
+  
+          <!-- Default Logo -->
+          <a class="navbar-brand d-flex d-lg-none" href="index-2.html" aria-label="Front">
+            <img class="navbar-brand-logo" src="{% static 'assets/svg/logos/logo-short.svg' %}" alt="Logo">
+          </a>
+          <!-- End Default Logo -->
+  
+          <div class="ms-auto">
+            <a class="link link-sm link-secondary" href="index-2.html">
+              <i class="bi-chevron-left small ms-1"></i> Go to main
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ========== END HEADER ========== -->
+  
+  {% block main_content %}
+
+  {% endblock %}
+    
+    
+  <!-- JS Implementing Plugins -->
+  <script src="{% static  'assets/js/vendor.min.js'  %}"></script>
+
+  <!-- JS Front -->
+  <script src="{% static  'assets/js/theme.min.js'  %}"></script>
+
+  <!-- JS Plugins Init. -->
+  <!--<script>
+    (function() {
+      // INITIALIZATION OF BOOTSTRAP VALIDATION
+      // =======================================================
+      HSBsValidation.init('.js-validate', {
+        onSubmit: data => {
+          data.event.preventDefault()
+          alert('Submited')
+        }
+      })
+
+
+      // INITIALIZATION OF TOGGLE PASSWORD
+      // =======================================================
+      new HSTogglePassword('.js-toggle-password')
+    })()
+  </script>-->
+  {% block scripts %}
+  {% endblock %}
+</body>
+
+<!-- Mirrored from htmlstream.com/preview/front-v4.2/html/page-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Apr 2022 13:32:09 GMT -->
+</html>

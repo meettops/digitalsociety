@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main_content %}
+
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main" class="flex-grow-1">
+    <!-- Form -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-5 col-xl-4 d-none d-lg-flex justify-content-center align-items-center min-vh-lg-100 position-relative bg-dark" style="background-image: url({%  static 'assets/svg/components/wave-pattern-light.svg' %});">
+          <div class="flex-grow-1 p-5">
+            <!-- Blockquote -->
+            
+            <!-- End Blockquote -->
+
+            <!-- Clients -->
+            
+            <!-- End Clients -->
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-lg-7 col-xl-8 d-flex justify-content-center align-items-center min-vh-lg-100">
+          <div class="flex-grow-1 mx-auto" style="max-width: 28rem;">
+            <!-- Heading -->
+            <div class="text-center mb-5 mb-md-7">
+              <h1 class="h2">Welcome to Front</h1>
+              <p>Fill out the form to get started.</p>
+            </div>
+            <!-- End Heading -->
+
+            <!-- Form -->
+            <form  method="Post" action="{% url 'verify_otp' %}" class="js-validate needs-validation" novalidate>
+              {% csrf_token %}
+              <!-- Form -->
+              
+              <!-- End Form -->
+
+              <!-- Form -->
+              <div class="mb-4">
+                <div class="d-flex justify-content-between align-items-center">
+                  <label class="form-label" for="signupModalFormLoginPassword">OTP</label>
+
+                  
+                </div>
+
+                <div class="input-group input-group-merge" data-hs-validation-validate-class>
+                  <input type="password" class="js-toggle-password form-control form-control-lg" name="otp" id="otp"   >
+                </div>
+
+                <span class="invalid-feedback">Please enter a valid password.</span>
+              </div>
+              <!-- End Form -->
+
+             
+
+              <!-- Check -->
+              <!--<div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="signupHeroFormPrivacyCheck" name="signupFormPrivacyCheck" required>
+                <label class="form-check-label small" for="signupHeroFormPrivacyCheck"> By submitting this form I have read and acknowledged the <a href=page-privacy.html>Privacy Policy</a></label>
+                <span class="invalid-feedback">Please accept our Privacy Policy.</span>
+              </div>-->
+             
+              <!-- End Check -->
+
+              <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-primary ">varify</button>
+              </div>
+
+              <div class="text-center">
+                <p>Already have an account? <a class="link" href="/">Log in here</a></p>
+              </div>
+            </form>
+            <!-- End Form -->
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Form -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+{% endblock %}
+  
+
+
